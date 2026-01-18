@@ -1,0 +1,21 @@
+{
+    "id": "E006",
+    "description": "NEUTRAL (Self) - Val:128 Arou:128 - Flow: Flatline (The Hum)",
+    "raw_bytes": [
+        6,
+        4,
+        128,
+        128,
+        0,
+        0,
+        0
+    ],
+    "focus_layer": 4,
+    "valence": 128,
+    "arousal": 128,
+    "quit_flow": [
+        0,
+        0,
+        0
+    ]
+}

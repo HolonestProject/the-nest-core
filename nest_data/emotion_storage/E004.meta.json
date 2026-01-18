@@ -1,0 +1,21 @@
+{
+    "id": "E004",
+    "description": "LOVE (Self) - Val:255(Max) Arou:128(Calm) - Flow: Gentle Rise, Eternal Sustain (The Warmth)",
+    "raw_bytes": [
+        4,
+        4,
+        255,
+        128,
+        95,
+        255,
+        255
+    ],
+    "focus_layer": 4,
+    "valence": 255,
+    "arousal": 128,
+    "quit_flow": [
+        95,
+        255,
+        255
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": "R004",
+    "description": "CURIOSITY (Antenna) - Scan/Pulse",
+    "raw_bytes": [
+        4,
+        10,
+        32,
+        15,
+        68,
+        68,
+        68
+    ],
+    "hardware_target": 10,
+    "initial_strength": 32,
+    "direction": 15,
+    "quit_flow": [
+        68,
+        68,
+        68
+    ]
+}

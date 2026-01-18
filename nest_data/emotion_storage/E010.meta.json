@@ -1,0 +1,21 @@
+{
+    "id": "E010",
+    "description": "EUPHORIA (Self) - Val:224 Arou:255 - Flow: Max Peak, Stutter (The High)",
+    "raw_bytes": [
+        10,
+        4,
+        224,
+        255,
+        255,
+        255,
+        85
+    ],
+    "focus_layer": 4,
+    "valence": 224,
+    "arousal": 255,
+    "quit_flow": [
+        255,
+        255,
+        85
+    ]
+}

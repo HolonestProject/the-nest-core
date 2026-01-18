@@ -1,0 +1,21 @@
+{
+    "id": "E009",
+    "description": "DOUBT (Logic) - Val:64 Arou:64 - Flow: Wobble, Wobble, Dip (The Unease)",
+    "raw_bytes": [
+        9,
+        1,
+        64,
+        64,
+        85,
+        85,
+        170
+    ],
+    "focus_layer": 1,
+    "valence": 64,
+    "arousal": 64,
+    "quit_flow": [
+        85,
+        85,
+        170
+    ]
+}

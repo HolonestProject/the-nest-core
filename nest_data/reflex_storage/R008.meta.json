@@ -1,0 +1,21 @@
+{
+    "id": "R008",
+    "description": "ALERT (Antenna) - Vibrate/Strobe",
+    "raw_bytes": [
+        8,
+        10,
+        128,
+        85,
+        204,
+        204,
+        204
+    ],
+    "hardware_target": 10,
+    "initial_strength": 128,
+    "direction": 85,
+    "quit_flow": [
+        204,
+        204,
+        204
+    ]
+}

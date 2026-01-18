@@ -1,0 +1,21 @@
+{
+    "id": "R005",
+    "description": "CONFUSION (CPU Core) - Spin/Chaotic",
+    "raw_bytes": [
+        5,
+        1,
+        64,
+        170,
+        87,
+        213,
+        168
+    ],
+    "hardware_target": 1,
+    "initial_strength": 64,
+    "direction": 170,
+    "quit_flow": [
+        87,
+        213,
+        168
+    ]
+}

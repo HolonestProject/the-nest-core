@@ -1,0 +1,21 @@
+{
+    "id": "R002",
+    "description": "PURE JOY (CPU Core) - Expand/Rapid Rise",
+    "raw_bytes": [
+        2,
+        1,
+        255,
+        255,
+        85,
+        255,
+        170
+    ],
+    "hardware_target": 1,
+    "initial_strength": 255,
+    "direction": 255,
+    "quit_flow": [
+        85,
+        255,
+        170
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": "R001",
+    "description": "MENTAL SHOCK (Antenna) - Vibrate/Tremor",
+    "raw_bytes": [
+        1,
+        10,
+        3,
+        85,
+        80,
+        170,
+        170
+    ],
+    "hardware_target": 10,
+    "initial_strength": 3,
+    "direction": 85,
+    "quit_flow": [
+        80,
+        170,
+        170
+    ]
+}

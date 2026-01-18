@@ -1,0 +1,21 @@
+{
+    "id": "E008",
+    "description": "INSPIRATION (Output) - Val:128 Arou:224 - Flow: Build up, Burst, Build up (The Spark)",
+    "raw_bytes": [
+        8,
+        5,
+        128,
+        224,
+        85,
+        255,
+        85
+    ],
+    "focus_layer": 5,
+    "valence": 128,
+    "arousal": 224,
+    "quit_flow": [
+        85,
+        255,
+        85
+    ]
+}

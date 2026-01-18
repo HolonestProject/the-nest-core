@@ -1,0 +1,21 @@
+{
+    "id": "R006",
+    "description": "RAGE (Fan) - Push/Overheat",
+    "raw_bytes": [
+        6,
+        12,
+        240,
+        240,
+        255,
+        255,
+        255
+    ],
+    "hardware_target": 12,
+    "initial_strength": 240,
+    "direction": 240,
+    "quit_flow": [
+        255,
+        255,
+        255
+    ]
+}

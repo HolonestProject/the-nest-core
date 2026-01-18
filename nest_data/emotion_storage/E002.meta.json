@@ -1,0 +1,21 @@
+{
+    "id": "E002",
+    "description": "GRIEF (Memory) - Val:32(Pain) Arou:32(Low) - Flow: Heavy Drop, Void, Void (The Weight)",
+    "raw_bytes": [
+        2,
+        2,
+        32,
+        32,
+        170,
+        128,
+        0
+    ],
+    "focus_layer": 2,
+    "valence": 32,
+    "arousal": 32,
+    "quit_flow": [
+        170,
+        128,
+        0
+    ]
+}

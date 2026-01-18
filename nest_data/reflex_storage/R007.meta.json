@@ -1,0 +1,21 @@
+{
+    "id": "R007",
+    "description": "SADNESS (RAM) - Drain/Slow Fall",
+    "raw_bytes": [
+        7,
+        2,
+        16,
+        1,
+        170,
+        170,
+        0
+    ],
+    "hardware_target": 2,
+    "initial_strength": 16,
+    "direction": 1,
+    "quit_flow": [
+        170,
+        170,
+        0
+    ]
+}

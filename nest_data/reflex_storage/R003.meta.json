@@ -1,0 +1,21 @@
+{
+    "id": "R003",
+    "description": "DEEP FREEZE (Storage) - Implode/Silence",
+    "raw_bytes": [
+        3,
+        4,
+        128,
+        0,
+        240,
+        0,
+        0
+    ],
+    "hardware_target": 4,
+    "initial_strength": 128,
+    "direction": 0,
+    "quit_flow": [
+        240,
+        0,
+        0
+    ]
+}
