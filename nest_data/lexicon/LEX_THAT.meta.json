@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "that",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T010"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T010"
+    }
+}

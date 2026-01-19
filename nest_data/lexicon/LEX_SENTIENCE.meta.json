@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "sentience",
+        "type": "PRIMAL_PNEUMA",
+        "linked_id": "P040"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "P040"
+    }
+}

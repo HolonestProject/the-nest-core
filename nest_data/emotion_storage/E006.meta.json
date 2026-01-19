@@ -1,21 +1,22 @@
 {
     "id": "E006",
-    "description": "NEUTRAL (Self) - Val:128 Arou:128 - Flow: Flatline (The Hum)",
+    "uuid": 6,
+    "description": "BOREDOM (Logic) - Val:32 Arou:64 - Flow: Flat/Flat/Flat (Starvation)",
     "raw_bytes": [
         6,
-        4,
+        1,
+        32,
+        64,
         128,
         128,
-        0,
-        0,
-        0
+        128
     ],
-    "focus_layer": 4,
-    "valence": 128,
-    "arousal": 128,
-    "quit_flow": [
-        0,
-        0,
-        0
-    ]
+    "flow_pattern": [
+        128,
+        128,
+        128
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 1,
+    "valence": 32
 }

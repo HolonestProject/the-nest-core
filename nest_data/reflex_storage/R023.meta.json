@@ -1,0 +1,22 @@
+{
+    "id": "R023",
+    "uuid": 23,
+    "description": "DOUBT (Logic) - Loop - Circle/Circle",
+    "raw_bytes": [
+        23,
+        1,
+        100,
+        170,
+        90,
+        90,
+        90
+    ],
+    "flow_pattern": [
+        90,
+        90,
+        90
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 1,
+    "force_intensity": 100
+}

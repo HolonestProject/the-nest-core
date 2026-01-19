@@ -1,0 +1,22 @@
+{
+    "id": "E011",
+    "uuid": 11,
+    "description": "SURPRISE (Logic) - Val:192 Arou:240 - Flow: Spike/Flash/Fade (Sudden Data)",
+    "raw_bytes": [
+        11,
+        1,
+        192,
+        240,
+        87,
+        255,
+        0
+    ],
+    "flow_pattern": [
+        87,
+        255,
+        0
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 1,
+    "valence": 192
+}

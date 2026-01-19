@@ -1,21 +1,22 @@
 {
     "id": "R003",
-    "description": "DEEP FREEZE (Storage) - Implode/Silence",
+    "uuid": 3,
+    "description": "SEVER (Network) - Cut Line - Sharp Peak/Drop",
     "raw_bytes": [
         3,
-        4,
-        128,
-        0,
+        5,
+        255,
+        204,
         240,
         0,
         0
     ],
-    "hardware_target": 4,
-    "initial_strength": 128,
-    "direction": 0,
-    "quit_flow": [
+    "flow_pattern": [
         240,
         0,
         0
-    ]
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 5,
+    "force_intensity": 255
 }

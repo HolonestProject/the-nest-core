@@ -1,0 +1,22 @@
+{
+    "id": "R054",
+    "uuid": 54,
+    "description": "TRUST (Firewall) - Open - Vulnerable",
+    "raw_bytes": [
+        54,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "flow_pattern": [
+        0,
+        0,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 14,
+    "force_intensity": 0
+}

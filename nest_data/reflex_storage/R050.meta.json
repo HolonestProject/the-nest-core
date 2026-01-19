@@ -1,0 +1,22 @@
+{
+    "id": "R050",
+    "uuid": 50,
+    "description": "ECHO (Output) - Reflect - Receive/Return",
+    "raw_bytes": [
+        50,
+        6,
+        128,
+        85,
+        87,
+        170,
+        0
+    ],
+    "flow_pattern": [
+        87,
+        170,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 6,
+    "force_intensity": 128
+}

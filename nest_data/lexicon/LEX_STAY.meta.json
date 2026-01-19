@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "stay",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T007"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T007"
+    }
+}

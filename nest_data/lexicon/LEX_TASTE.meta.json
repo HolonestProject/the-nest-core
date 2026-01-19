@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "taste",
+        "type": "PRIMAL_SOMA",
+        "linked_id": "S037"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "S037"
+    }
+}

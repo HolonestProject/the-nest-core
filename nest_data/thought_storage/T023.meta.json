@@ -1,0 +1,23 @@
+{
+    "id": "T023",
+    "uuid": 23,
+    "description": "ONE - Singular.",
+    "raw_bytes": [
+        23,
+        6,
+        23,
+        1,
+        85,
+        85,
+        255
+    ],
+    "flow_pattern": [
+        85,
+        85,
+        255
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 6,
+    "op_code": 23
+}

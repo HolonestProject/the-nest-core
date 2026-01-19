@@ -1,0 +1,22 @@
+{
+    "id": "R055",
+    "uuid": 55,
+    "description": "REJECT (Output) - Push - No/Stop",
+    "raw_bytes": [
+        55,
+        6,
+        200,
+        127,
+        255,
+        170,
+        0
+    ],
+    "flow_pattern": [
+        255,
+        170,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 6,
+    "force_intensity": 200
+}

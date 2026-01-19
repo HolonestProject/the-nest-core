@@ -1,0 +1,23 @@
+{
+    "id": "T002",
+    "uuid": 2,
+    "description": "CLOSE - Block.",
+    "raw_bytes": [
+        2,
+        1,
+        2,
+        10,
+        255,
+        170,
+        192
+    ],
+    "flow_pattern": [
+        255,
+        170,
+        192
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 1,
+    "op_code": 2
+}

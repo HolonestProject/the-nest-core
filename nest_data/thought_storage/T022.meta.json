@@ -1,0 +1,23 @@
+{
+    "id": "T022",
+    "uuid": 22,
+    "description": "PART - Subset.",
+    "raw_bytes": [
+        22,
+        6,
+        22,
+        8,
+        85,
+        170,
+        0
+    ],
+    "flow_pattern": [
+        85,
+        170,
+        0
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 6,
+    "op_code": 22
+}

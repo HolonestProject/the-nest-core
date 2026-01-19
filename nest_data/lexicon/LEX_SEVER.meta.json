@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "sever",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R003"
+    },
+    "wiring": {
+        "reflex_root": "R003",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

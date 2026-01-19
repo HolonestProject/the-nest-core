@@ -1,0 +1,22 @@
+{
+    "id": "R033",
+    "uuid": 33,
+    "description": "WAKE (System) - Expand - Rise/Rise/Ready",
+    "raw_bytes": [
+        33,
+        0,
+        200,
+        15,
+        85,
+        85,
+        255
+    ],
+    "flow_pattern": [
+        85,
+        85,
+        255
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 0,
+    "force_intensity": 200
+}

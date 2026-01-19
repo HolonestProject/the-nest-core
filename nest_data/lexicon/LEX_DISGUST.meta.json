@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "disgust",
+        "type": "PRIMAL_EMOTION",
+        "linked_id": "E003"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": "E003",
+        "thought_root": null
+    }
+}

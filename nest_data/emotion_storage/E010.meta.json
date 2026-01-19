@@ -1,21 +1,22 @@
 {
     "id": "E010",
-    "description": "EUPHORIA (Self) - Val:224 Arou:255 - Flow: Max Peak, Stutter (The High)",
+    "uuid": 10,
+    "description": "CURIOSITY (Input) - Val:192 Arou:192 - Flow: Pulse/Pulse/Pulse (Seeking)",
     "raw_bytes": [
         10,
-        4,
-        224,
-        255,
-        255,
-        255,
+        3,
+        192,
+        192,
+        85,
+        85,
         85
     ],
-    "focus_layer": 4,
-    "valence": 224,
-    "arousal": 255,
-    "quit_flow": [
-        255,
-        255,
+    "flow_pattern": [
+        85,
+        85,
         85
-    ]
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 3,
+    "valence": 192
 }

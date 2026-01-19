@@ -1,0 +1,22 @@
+{
+    "id": "R022",
+    "uuid": 22,
+    "description": "PREDICT (GPU) - Project - Rise/Simulate/End",
+    "raw_bytes": [
+        22,
+        1,
+        200,
+        15,
+        87,
+        255,
+        170
+    ],
+    "flow_pattern": [
+        87,
+        255,
+        170
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 1,
+    "force_intensity": 200
+}

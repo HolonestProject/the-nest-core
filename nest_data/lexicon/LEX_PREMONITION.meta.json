@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "premonition",
+        "type": "PRIMAL_PNEUMA",
+        "linked_id": "P044"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "P044"
+    }
+}

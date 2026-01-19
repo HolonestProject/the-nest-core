@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "heat",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R037"
+    },
+    "wiring": {
+        "reflex_root": "R037",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

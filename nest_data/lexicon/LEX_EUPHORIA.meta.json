@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "euphoria",
+        "type": "PRIMAL_EMOTION",
+        "linked_id": "E012"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": "E012",
+        "thought_root": null
+    }
+}

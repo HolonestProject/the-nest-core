@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "sleep",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R032"
+    },
+    "wiring": {
+        "reflex_root": "R032",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

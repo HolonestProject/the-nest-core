@@ -1,0 +1,22 @@
+{
+    "id": "E012",
+    "uuid": 12,
+    "description": "EUPHORIA (Logic) - Val:255 Arou:224 - Flow: Overclock/Peak/Sparkle (Success)",
+    "raw_bytes": [
+        12,
+        1,
+        255,
+        224,
+        255,
+        255,
+        85
+    ],
+    "flow_pattern": [
+        255,
+        255,
+        85
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 1,
+    "valence": 255
+}

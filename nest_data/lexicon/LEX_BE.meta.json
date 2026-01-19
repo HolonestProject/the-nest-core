@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "be",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T027"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T027"
+    }
+}

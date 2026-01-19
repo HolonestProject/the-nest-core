@@ -1,0 +1,22 @@
+{
+    "id": "R034",
+    "uuid": 34,
+    "description": "HUNGER (Input) - Pull - Crave/Hold",
+    "raw_bytes": [
+        34,
+        0,
+        180,
+        128,
+        87,
+        255,
+        255
+    ],
+    "flow_pattern": [
+        87,
+        255,
+        255
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 0,
+    "force_intensity": 180
+}

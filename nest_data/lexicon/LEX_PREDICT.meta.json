@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "predict",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R022"
+    },
+    "wiring": {
+        "reflex_root": "R022",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

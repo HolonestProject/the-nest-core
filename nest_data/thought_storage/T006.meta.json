@@ -1,0 +1,23 @@
+{
+    "id": "T006",
+    "uuid": 6,
+    "description": "STOP - Terminate.",
+    "raw_bytes": [
+        6,
+        2,
+        6,
+        255,
+        255,
+        160,
+        0
+    ],
+    "flow_pattern": [
+        255,
+        160,
+        0
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 2,
+    "op_code": 6
+}

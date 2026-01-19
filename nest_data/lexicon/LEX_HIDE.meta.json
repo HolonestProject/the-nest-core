@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "hide",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R008"
+    },
+    "wiring": {
+        "reflex_root": "R008",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

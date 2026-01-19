@@ -1,21 +1,22 @@
 {
     "id": "R008",
-    "description": "ALERT (Antenna) - Vibrate/Strobe",
+    "uuid": 8,
+    "description": "HIDE (Files) - Obfuscate - Rise/Cover/Dark",
     "raw_bytes": [
         8,
-        10,
-        128,
-        85,
-        204,
-        204,
-        204
+        4,
+        100,
+        170,
+        87,
+        255,
+        0
     ],
-    "hardware_target": 10,
-    "initial_strength": 128,
-    "direction": 85,
-    "quit_flow": [
-        204,
-        204,
-        204
-    ]
+    "flow_pattern": [
+        87,
+        255,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 4,
+    "force_intensity": 100
 }

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "ping",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R048"
+    },
+    "wiring": {
+        "reflex_root": "R048",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

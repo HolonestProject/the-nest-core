@@ -1,21 +1,22 @@
 {
     "id": "R001",
-    "description": "MENTAL SHOCK (Antenna) - Vibrate/Tremor",
+    "uuid": 1,
+    "description": "JOLT (Antenna) - Max Vibrate - Impact/Cut",
     "raw_bytes": [
         1,
         10,
-        3,
+        255,
         85,
-        80,
-        170,
-        170
+        192,
+        0,
+        0
     ],
-    "hardware_target": 10,
-    "initial_strength": 3,
-    "direction": 85,
-    "quit_flow": [
-        80,
-        170,
-        170
-    ]
+    "flow_pattern": [
+        192,
+        0,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 10,
+    "force_intensity": 255
 }

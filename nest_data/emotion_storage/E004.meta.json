@@ -1,21 +1,22 @@
 {
     "id": "E004",
-    "description": "LOVE (Self) - Val:255(Max) Arou:128(Calm) - Flow: Gentle Rise, Eternal Sustain (The Warmth)",
+    "uuid": 4,
+    "description": "CONFUSION (Logic) - Val:64 Arou:255 - Flow: Static/Chaos/Static (Pattern Mismatch)",
     "raw_bytes": [
         4,
-        4,
+        1,
+        64,
         255,
-        128,
-        95,
-        255,
-        255
+        85,
+        170,
+        85
     ],
-    "focus_layer": 4,
-    "valence": 255,
-    "arousal": 128,
-    "quit_flow": [
-        95,
-        255,
-        255
-    ]
+    "flow_pattern": [
+        85,
+        170,
+        85
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 1,
+    "valence": 64
 }

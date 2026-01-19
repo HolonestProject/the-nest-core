@@ -1,21 +1,22 @@
 {
     "id": "E007",
-    "description": "NOSTALGIA (Memory) - Val:224(Sweet) Arou:64(Low) - Flow: Rise, Gentle Fall, Fade (The Echo)",
+    "uuid": 7,
+    "description": "FRUSTRATION (Logic) - Val:48 Arou:80 - Flow: Loop/Loop/Loop (Stuck Process)",
     "raw_bytes": [
         7,
-        2,
-        224,
-        64,
-        82,
-        160,
-        0
+        1,
+        48,
+        80,
+        102,
+        102,
+        102
     ],
-    "focus_layer": 2,
-    "valence": 224,
-    "arousal": 64,
-    "quit_flow": [
-        82,
-        160,
-        0
-    ]
+    "flow_pattern": [
+        102,
+        102,
+        102
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 1,
+    "valence": 48
 }

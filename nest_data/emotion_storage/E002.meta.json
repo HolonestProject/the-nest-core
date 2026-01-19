@@ -1,21 +1,22 @@
 {
     "id": "E002",
-    "description": "GRIEF (Memory) - Val:32(Pain) Arou:32(Low) - Flow: Heavy Drop, Void, Void (The Weight)",
+    "uuid": 2,
+    "description": "ANGER (Output) - Val:32 Arou:224 - Flow: Rigid Rise/Sustain/Cut (Obstruction)",
     "raw_bytes": [
         2,
-        2,
+        5,
         32,
-        32,
-        170,
-        128,
-        0
+        224,
+        85,
+        255,
+        170
     ],
-    "focus_layer": 2,
-    "valence": 32,
-    "arousal": 32,
-    "quit_flow": [
-        170,
-        128,
-        0
-    ]
+    "flow_pattern": [
+        85,
+        255,
+        170
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 5,
+    "valence": 32
 }

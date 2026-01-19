@@ -1,21 +1,22 @@
 {
     "id": "R006",
-    "description": "RAGE (Fan) - Push/Overheat",
+    "uuid": 6,
+    "description": "THROTTLE (CPU) - Shrink - Slow Down/Fade",
     "raw_bytes": [
         6,
-        12,
+        1,
+        150,
         240,
-        240,
-        255,
-        255,
-        255
+        170,
+        160,
+        0
     ],
-    "hardware_target": 12,
-    "initial_strength": 240,
-    "direction": 240,
-    "quit_flow": [
-        255,
-        255,
-        255
-    ]
+    "flow_pattern": [
+        170,
+        160,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 1,
+    "force_intensity": 150
 }

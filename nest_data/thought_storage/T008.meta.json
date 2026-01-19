@@ -1,0 +1,23 @@
+{
+    "id": "T008",
+    "uuid": 8,
+    "description": "REVERSE - Undo.",
+    "raw_bytes": [
+        8,
+        2,
+        8,
+        32,
+        170,
+        85,
+        0
+    ],
+    "flow_pattern": [
+        170,
+        85,
+        0
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 2,
+    "op_code": 8
+}

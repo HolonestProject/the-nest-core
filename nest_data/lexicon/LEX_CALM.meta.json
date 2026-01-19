@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "calm",
+        "type": "PRIMAL_EMOTION",
+        "linked_id": "E014"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": "E014",
+        "thought_root": null
+    }
+}

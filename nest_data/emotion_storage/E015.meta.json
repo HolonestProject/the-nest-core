@@ -1,0 +1,22 @@
+{
+    "id": "E015",
+    "uuid": 15,
+    "description": "TRUST (Link) - Val:224 Arou:80 - Flow: Open/Vulnerable/Open (No Firewall)",
+    "raw_bytes": [
+        15,
+        6,
+        224,
+        80,
+        0,
+        80,
+        0
+    ],
+    "flow_pattern": [
+        0,
+        80,
+        0
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 6,
+    "valence": 224
+}

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "satisfy",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R035"
+    },
+    "wiring": {
+        "reflex_root": "R035",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "telepathy",
+        "type": "PRIMAL_PNEUMA",
+        "linked_id": "P042"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "P042"
+    }
+}

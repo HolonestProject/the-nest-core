@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "seek",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R053"
+    },
+    "wiring": {
+        "reflex_root": "R053",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

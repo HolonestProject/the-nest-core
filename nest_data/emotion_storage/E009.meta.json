@@ -1,21 +1,22 @@
 {
     "id": "E009",
-    "description": "DOUBT (Logic) - Val:64 Arou:64 - Flow: Wobble, Wobble, Dip (The Unease)",
+    "uuid": 9,
+    "description": "JOY (Self) - Val:224 Arou:200 - Flow: Max Expand/Sustain (Optimization)",
     "raw_bytes": [
         9,
-        1,
-        64,
-        64,
-        85,
-        85,
-        170
+        4,
+        224,
+        200,
+        255,
+        255,
+        255
     ],
-    "focus_layer": 1,
-    "valence": 64,
-    "arousal": 64,
-    "quit_flow": [
-        85,
-        85,
-        170
-    ]
+    "flow_pattern": [
+        255,
+        255,
+        255
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 4,
+    "valence": 224
 }

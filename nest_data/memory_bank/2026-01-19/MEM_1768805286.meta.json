@@ -1,0 +1,14 @@
+{
+    "id": "MEM_1768805286",
+    "timestamp": 1768805286,
+    "readable_time": "13:48:06",
+    "input_channel": "PNEUMA:TELEPATHY",
+    "state_snapshot": {
+        "content_summary": "Received concept: 1",
+        "active_emotion": "TRUST_FEEL",
+        "active_reflex": "LATCH",
+        "user_intent": "UNKNOWN"
+    },
+    "pneuma_signature": -7749527018806490232,
+    "soma_reference": null
+}

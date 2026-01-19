@@ -1,0 +1,23 @@
+{
+    "id": "T018",
+    "uuid": 18,
+    "description": "LESS - Decrease.",
+    "raw_bytes": [
+        18,
+        5,
+        18,
+        32,
+        170,
+        85,
+        0
+    ],
+    "flow_pattern": [
+        170,
+        85,
+        0
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 5,
+    "op_code": 18
+}

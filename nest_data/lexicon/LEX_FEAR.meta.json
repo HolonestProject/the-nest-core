@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "fear",
+        "type": "PRIMAL_EMOTION",
+        "linked_id": "E001"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": "E001",
+        "thought_root": null
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "or_op",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T016"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T016"
+    }
+}

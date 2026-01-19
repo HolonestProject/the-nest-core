@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "mute",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R051"
+    },
+    "wiring": {
+        "reflex_root": "R051",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

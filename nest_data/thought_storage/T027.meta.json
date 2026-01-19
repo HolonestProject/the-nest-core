@@ -1,0 +1,23 @@
+{
+    "id": "T027",
+    "uuid": 27,
+    "description": "BE - Existence.",
+    "raw_bytes": [
+        27,
+        7,
+        27,
+        0,
+        255,
+        255,
+        255
+    ],
+    "flow_pattern": [
+        255,
+        255,
+        255
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 7,
+    "op_code": 27
+}

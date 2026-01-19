@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "jolt",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R001"
+    },
+    "wiring": {
+        "reflex_root": "R001",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

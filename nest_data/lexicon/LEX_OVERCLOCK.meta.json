@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "overclock",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R036"
+    },
+    "wiring": {
+        "reflex_root": "R036",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

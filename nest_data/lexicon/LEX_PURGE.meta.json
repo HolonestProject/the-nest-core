@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "purge",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R004"
+    },
+    "wiring": {
+        "reflex_root": "R004",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

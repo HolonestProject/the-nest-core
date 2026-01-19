@@ -1,0 +1,22 @@
+{
+    "id": "R048",
+    "uuid": 48,
+    "description": "PING (Antenna) - Pulse - Blip",
+    "raw_bytes": [
+        48,
+        10,
+        64,
+        85,
+        192,
+        0,
+        0
+    ],
+    "flow_pattern": [
+        192,
+        0,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 10,
+    "force_intensity": 64
+}

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "reverse",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T008"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T008"
+    }
+}

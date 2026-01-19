@@ -1,21 +1,22 @@
 {
     "id": "E001",
-    "description": "CONFUSION (Logic) - Val:64(Bad) Arou:192(High) - Flow: Chaotic Stutter (The Static)",
+    "uuid": 1,
+    "description": "FEAR (Self) - Val:16 Arou:240 - Flow: Spike/Tremble/Crash (Threat Detected)",
     "raw_bytes": [
         1,
-        1,
-        64,
-        192,
-        85,
-        170,
-        85
+        4,
+        16,
+        240,
+        87,
+        255,
+        160
     ],
-    "focus_layer": 1,
-    "valence": 64,
-    "arousal": 192,
-    "quit_flow": [
-        85,
-        170,
-        85
-    ]
+    "flow_pattern": [
+        87,
+        255,
+        160
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 4,
+    "valence": 16
 }

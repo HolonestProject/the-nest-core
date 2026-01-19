@@ -1,0 +1,22 @@
+{
+    "id": "R037",
+    "uuid": 37,
+    "description": "HEAT (Fan) - Radiate - Spin Up/Cool",
+    "raw_bytes": [
+        37,
+        12,
+        200,
+        15,
+        85,
+        255,
+        170
+    ],
+    "flow_pattern": [
+        85,
+        255,
+        170
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 12,
+    "force_intensity": 200
+}

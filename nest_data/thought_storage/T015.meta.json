@@ -1,0 +1,23 @@
+{
+    "id": "T015",
+    "uuid": 15,
+    "description": "AND - Join.",
+    "raw_bytes": [
+        15,
+        4,
+        15,
+        10,
+        85,
+        255,
+        85
+    ],
+    "flow_pattern": [
+        85,
+        255,
+        85
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 4,
+    "op_code": 15
+}

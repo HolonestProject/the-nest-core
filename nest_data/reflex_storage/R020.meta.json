@@ -1,0 +1,22 @@
+{
+    "id": "R020",
+    "uuid": 20,
+    "description": "MARK (RAM) - Tag - Flash/Mark",
+    "raw_bytes": [
+        20,
+        2,
+        100,
+        85,
+        255,
+        0,
+        0
+    ],
+    "flow_pattern": [
+        255,
+        0,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 2,
+    "force_intensity": 100
+}

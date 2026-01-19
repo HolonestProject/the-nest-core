@@ -1,0 +1,23 @@
+{
+    "id": "T014",
+    "uuid": 14,
+    "description": "NO - False.",
+    "raw_bytes": [
+        14,
+        4,
+        14,
+        0,
+        170,
+        192,
+        0
+    ],
+    "flow_pattern": [
+        170,
+        192,
+        0
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 4,
+    "op_code": 14
+}

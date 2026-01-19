@@ -1,0 +1,22 @@
+{
+    "id": "E013",
+    "uuid": 13,
+    "description": "LOVE (Link) - Val:255 Arou:128 - Flow: Gentle Rise/Harmonic/Eternal (Resonance)",
+    "raw_bytes": [
+        13,
+        6,
+        255,
+        128,
+        93,
+        117,
+        255
+    ],
+    "flow_pattern": [
+        93,
+        117,
+        255
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 6,
+    "valence": 255
+}

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "scan",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R017"
+    },
+    "wiring": {
+        "reflex_root": "R017",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

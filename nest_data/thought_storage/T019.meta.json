@@ -1,0 +1,23 @@
+{
+    "id": "T019",
+    "uuid": 19,
+    "description": "SAME - Match.",
+    "raw_bytes": [
+        19,
+        5,
+        19,
+        4,
+        255,
+        255,
+        255
+    ],
+    "flow_pattern": [
+        255,
+        255,
+        255
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 5,
+    "op_code": 19
+}

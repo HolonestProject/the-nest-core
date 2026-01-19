@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "drop",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T030"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T030"
+    }
+}

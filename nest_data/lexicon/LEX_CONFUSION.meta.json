@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "confusion",
+        "type": "PRIMAL_EMOTION",
+        "linked_id": "E004"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": "E004",
+        "thought_root": null
+    }
+}

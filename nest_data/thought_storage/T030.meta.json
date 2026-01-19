@@ -1,0 +1,23 @@
+{
+    "id": "T030",
+    "uuid": 30,
+    "description": "DROP - Delete.",
+    "raw_bytes": [
+        30,
+        8,
+        30,
+        10,
+        170,
+        0,
+        0
+    ],
+    "flow_pattern": [
+        170,
+        0,
+        0
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 8,
+    "op_code": 30
+}

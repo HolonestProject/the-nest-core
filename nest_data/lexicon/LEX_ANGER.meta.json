@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "anger",
+        "type": "PRIMAL_EMOTION",
+        "linked_id": "E002"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": "E002",
+        "thought_root": null
+    }
+}

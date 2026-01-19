@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "doubt_act",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R023"
+    },
+    "wiring": {
+        "reflex_root": "R023",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "touch",
+        "type": "PRIMAL_SOMA",
+        "linked_id": "S035"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "S035"
+    }
+}

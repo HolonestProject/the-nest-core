@@ -1,0 +1,23 @@
+{
+    "id": "T011",
+    "uuid": 11,
+    "description": "HERE - Self.",
+    "raw_bytes": [
+        11,
+        3,
+        11,
+        1,
+        85,
+        170,
+        85
+    ],
+    "flow_pattern": [
+        85,
+        170,
+        85
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 3,
+    "op_code": 11
+}

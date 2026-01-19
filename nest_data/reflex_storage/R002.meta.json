@@ -1,21 +1,22 @@
 {
     "id": "R002",
-    "description": "PURE JOY (CPU Core) - Expand/Rapid Rise",
+    "uuid": 2,
+    "description": "FREEZE (Disk) - Lock Write - Total Stasis",
     "raw_bytes": [
         2,
-        1,
+        4,
+        200,
         255,
         255,
-        85,
         255,
-        170
+        255
     ],
-    "hardware_target": 1,
-    "initial_strength": 255,
-    "direction": 255,
-    "quit_flow": [
-        85,
+    "flow_pattern": [
         255,
-        170
-    ]
+        255,
+        255
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 4,
+    "force_intensity": 200
 }

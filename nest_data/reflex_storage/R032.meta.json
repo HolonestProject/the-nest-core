@@ -1,0 +1,22 @@
+{
+    "id": "R032",
+    "uuid": 32,
+    "description": "SLEEP (System) - Null - Slow Fall/Void",
+    "raw_bytes": [
+        32,
+        0,
+        10,
+        0,
+        170,
+        0,
+        0
+    ],
+    "flow_pattern": [
+        170,
+        0,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 0,
+    "force_intensity": 10
+}

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "curiosity",
+        "type": "PRIMAL_EMOTION",
+        "linked_id": "E010"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": "E010",
+        "thought_root": null
+    }
+}

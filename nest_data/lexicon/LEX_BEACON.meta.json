@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "beacon",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R052"
+    },
+    "wiring": {
+        "reflex_root": "R052",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

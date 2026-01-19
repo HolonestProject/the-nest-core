@@ -1,0 +1,22 @@
+{
+    "id": "S037",
+    "uuid": 37,
+    "description": "Unknown",
+    "raw_bytes": [
+        37,
+        9,
+        37,
+        2,
+        15,
+        15,
+        170
+    ],
+    "flow_pattern": [
+        15,
+        15,
+        170
+    ],
+    "category": "SOMA_SENSOR",
+    "physics": "ENCAPSULATION",
+    "io_port": "INPUT_STREAM"
+}

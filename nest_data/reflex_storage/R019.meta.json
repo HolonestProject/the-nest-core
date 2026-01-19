@@ -1,0 +1,22 @@
+{
+    "id": "R019",
+    "uuid": 19,
+    "description": "IGNORE (Input) - Filter - Fade Out",
+    "raw_bytes": [
+        19,
+        0,
+        64,
+        255,
+        170,
+        0,
+        0
+    ],
+    "flow_pattern": [
+        170,
+        0,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 0,
+    "force_intensity": 64
+}

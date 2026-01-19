@@ -1,0 +1,23 @@
+{
+    "id": "T026",
+    "uuid": 26,
+    "description": "THEN - Sequence.",
+    "raw_bytes": [
+        26,
+        7,
+        26,
+        16,
+        85,
+        87,
+        255
+    ],
+    "flow_pattern": [
+        85,
+        87,
+        255
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 7,
+    "op_code": 26
+}

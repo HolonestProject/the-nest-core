@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "diff",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T020"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T020"
+    }
+}

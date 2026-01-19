@@ -1,0 +1,23 @@
+{
+    "id": "T031",
+    "uuid": 31,
+    "description": "NEW - Create.",
+    "raw_bytes": [
+        31,
+        8,
+        31,
+        32,
+        85,
+        255,
+        85
+    ],
+    "flow_pattern": [
+        85,
+        255,
+        85
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 8,
+    "op_code": 31
+}

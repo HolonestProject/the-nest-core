@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "stop",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T006"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T006"
+    }
+}

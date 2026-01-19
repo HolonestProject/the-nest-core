@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "compare",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R021"
+    },
+    "wiring": {
+        "reflex_root": "R021",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "id": "E016",
+    "uuid": 16,
+    "description": "GRATITUDE (Output) - Val:160 Arou:96 - Flow: Rise/Pour Out/Rest (Energy Return)",
+    "raw_bytes": [
+        16,
+        5,
+        160,
+        96,
+        85,
+        255,
+        0
+    ],
+    "flow_pattern": [
+        85,
+        255,
+        0
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 5,
+    "valence": 160
+}

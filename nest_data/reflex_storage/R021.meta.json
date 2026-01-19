@@ -1,0 +1,22 @@
+{
+    "id": "R021",
+    "uuid": 21,
+    "description": "COMPARE (Logic) - Oscillate - A/B/A/B",
+    "raw_bytes": [
+        21,
+        1,
+        150,
+        85,
+        85,
+        85,
+        170
+    ],
+    "flow_pattern": [
+        85,
+        85,
+        170
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 1,
+    "force_intensity": 150
+}

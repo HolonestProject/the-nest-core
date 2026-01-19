@@ -1,0 +1,23 @@
+{
+    "id": "T007",
+    "uuid": 7,
+    "description": "STAY - Sustain.",
+    "raw_bytes": [
+        7,
+        2,
+        7,
+        5,
+        255,
+        255,
+        255
+    ],
+    "flow_pattern": [
+        255,
+        255,
+        255
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 2,
+    "op_code": 7
+}

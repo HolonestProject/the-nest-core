@@ -1,0 +1,23 @@
+{
+    "id": "T028",
+    "uuid": 28,
+    "description": "CHANGE - Transform.",
+    "raw_bytes": [
+        28,
+        7,
+        28,
+        8,
+        170,
+        85,
+        170
+    ],
+    "flow_pattern": [
+        170,
+        85,
+        170
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 7,
+    "op_code": 28
+}

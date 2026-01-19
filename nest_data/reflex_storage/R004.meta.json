@@ -1,21 +1,22 @@
 {
     "id": "R004",
-    "description": "CURIOSITY (Antenna) - Scan/Pulse",
+    "uuid": 4,
+    "description": "PURGE (RAM) - Eject Data - Rapid Rise/Dump",
     "raw_bytes": [
         4,
-        10,
-        32,
-        15,
-        68,
-        68,
-        68
+        2,
+        255,
+        224,
+        87,
+        240,
+        0
     ],
-    "hardware_target": 10,
-    "initial_strength": 32,
-    "direction": 15,
-    "quit_flow": [
-        68,
-        68,
-        68
-    ]
+    "flow_pattern": [
+        87,
+        240,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 2,
+    "force_intensity": 255
 }

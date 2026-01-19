@@ -1,21 +1,22 @@
 {
     "id": "E008",
-    "description": "INSPIRATION (Output) - Val:128 Arou:224 - Flow: Build up, Burst, Build up (The Spark)",
+    "uuid": 8,
+    "description": "SHAME (Self) - Val:20 Arou:16 - Flow: Shrink/Hide/Void (Error Internalized)",
     "raw_bytes": [
         8,
-        5,
-        128,
-        224,
-        85,
-        255,
-        85
+        4,
+        20,
+        16,
+        82,
+        160,
+        0
     ],
-    "focus_layer": 5,
-    "valence": 128,
-    "arousal": 224,
-    "quit_flow": [
-        85,
-        255,
-        85
-    ]
+    "flow_pattern": [
+        82,
+        160,
+        0
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 4,
+    "valence": 20
 }

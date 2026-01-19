@@ -1,0 +1,22 @@
+{
+    "id": "R053",
+    "uuid": 53,
+    "description": "SEEK (Net) - Scan - Search/Search",
+    "raw_bytes": [
+        53,
+        5,
+        150,
+        85,
+        85,
+        85,
+        160
+    ],
+    "flow_pattern": [
+        85,
+        85,
+        160
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 5,
+    "force_intensity": 150
+}

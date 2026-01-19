@@ -1,0 +1,23 @@
+{
+    "id": "T013",
+    "uuid": 13,
+    "description": "YES - True.",
+    "raw_bytes": [
+        13,
+        4,
+        13,
+        0,
+        85,
+        255,
+        255
+    ],
+    "flow_pattern": [
+        85,
+        255,
+        255
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 4,
+    "op_code": 13
+}

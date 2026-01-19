@@ -1,21 +1,22 @@
 {
     "id": "E003",
-    "description": "CURIOSITY (Input) - Val:192(Good) Arou:192(High) - Flow: Steady Vibrating Pulse (The Itch)",
+    "uuid": 3,
+    "description": "DISGUST (Input) - Val:48 Arou:200 - Flow: Hard Block/Void/Block (Bad Data)",
     "raw_bytes": [
         3,
         3,
-        192,
-        192,
-        85,
-        85,
-        85
+        48,
+        200,
+        255,
+        0,
+        255
     ],
-    "focus_layer": 3,
-    "valence": 192,
-    "arousal": 192,
-    "quit_flow": [
-        85,
-        85,
-        85
-    ]
+    "flow_pattern": [
+        255,
+        0,
+        255
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 3,
+    "valence": 48
 }

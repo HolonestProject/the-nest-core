@@ -1,0 +1,23 @@
+{
+    "id": "T017",
+    "uuid": 17,
+    "description": "MORE - Increase.",
+    "raw_bytes": [
+        17,
+        5,
+        17,
+        32,
+        85,
+        255,
+        255
+    ],
+    "flow_pattern": [
+        85,
+        255,
+        255
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 5,
+    "op_code": 17
+}

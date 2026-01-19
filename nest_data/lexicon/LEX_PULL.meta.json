@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "pull",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T004"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T004"
+    }
+}

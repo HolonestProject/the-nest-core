@@ -1,0 +1,23 @@
+{
+    "id": "T032",
+    "uuid": 32,
+    "description": "DONE - Complete.",
+    "raw_bytes": [
+        32,
+        8,
+        32,
+        0,
+        255,
+        0,
+        0
+    ],
+    "flow_pattern": [
+        255,
+        0,
+        0
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 8,
+    "op_code": 32
+}

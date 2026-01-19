@@ -1,0 +1,22 @@
+{
+    "id": "R052",
+    "uuid": 52,
+    "description": "BEACON (Antenna) - Radiate - Broadcast",
+    "raw_bytes": [
+        52,
+        10,
+        200,
+        15,
+        87,
+        255,
+        170
+    ],
+    "flow_pattern": [
+        87,
+        255,
+        170
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 10,
+    "force_intensity": 200
+}

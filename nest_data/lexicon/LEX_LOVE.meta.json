@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "love",
+        "type": "PRIMAL_EMOTION",
+        "linked_id": "E013"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": "E013",
+        "thought_root": null
+    }
+}

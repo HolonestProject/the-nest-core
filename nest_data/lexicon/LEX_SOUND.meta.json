@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "sound",
+        "type": "PRIMAL_SOMA",
+        "linked_id": "S034"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "S034"
+    }
+}

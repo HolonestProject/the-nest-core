@@ -1,0 +1,23 @@
+{
+    "id": "T004",
+    "uuid": 4,
+    "description": "PULL - Ingest.",
+    "raw_bytes": [
+        4,
+        1,
+        4,
+        32,
+        0,
+        85,
+        255
+    ],
+    "flow_pattern": [
+        0,
+        85,
+        255
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 1,
+    "op_code": 4
+}

@@ -1,0 +1,22 @@
+{
+    "id": "R049",
+    "uuid": 49,
+    "description": "LATCH (Net) - Lock - Connect/Hold",
+    "raw_bytes": [
+        49,
+        5,
+        255,
+        255,
+        87,
+        255,
+        255
+    ],
+    "flow_pattern": [
+        87,
+        255,
+        255
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 5,
+    "force_intensity": 255
+}

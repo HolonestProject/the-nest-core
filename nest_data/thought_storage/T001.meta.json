@@ -1,0 +1,23 @@
+{
+    "id": "T001",
+    "uuid": 1,
+    "description": "OPEN - Allow.",
+    "raw_bytes": [
+        1,
+        1,
+        1,
+        10,
+        0,
+        85,
+        255
+    ],
+    "flow_pattern": [
+        0,
+        85,
+        255
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 1,
+    "op_code": 1
+}

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "shield",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R005"
+    },
+    "wiring": {
+        "reflex_root": "R005",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "done",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T032"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T032"
+    }
+}

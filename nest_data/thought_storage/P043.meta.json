@@ -1,0 +1,22 @@
+{
+    "id": "P043",
+    "uuid": 43,
+    "description": "Unknown",
+    "raw_bytes": [
+        43,
+        10,
+        43,
+        8,
+        85,
+        87,
+        255
+    ],
+    "flow_pattern": [
+        85,
+        87,
+        255
+    ],
+    "category": "PNEUMA_MODE",
+    "physics": "INJECTION",
+    "validation": "QI_RESONANCE"
+}

@@ -1,0 +1,22 @@
+{
+    "id": "R035",
+    "uuid": 35,
+    "description": "SATISFY (Logic) - Settle - Peak/Relax",
+    "raw_bytes": [
+        35,
+        1,
+        200,
+        0,
+        255,
+        170,
+        0
+    ],
+    "flow_pattern": [
+        255,
+        170,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 1,
+    "force_intensity": 200
+}

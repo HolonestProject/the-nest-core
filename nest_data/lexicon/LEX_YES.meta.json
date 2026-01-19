@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "yes",
+        "type": "PRIMAL_THOUGHT",
+        "linked_id": "T013"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "T013"
+    }
+}

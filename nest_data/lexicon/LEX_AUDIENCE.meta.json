@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "audience",
+        "type": "PRIMAL_PNEUMA",
+        "linked_id": "P039"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "P039"
+    }
+}

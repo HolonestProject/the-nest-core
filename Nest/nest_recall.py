@@ -5,22 +5,21 @@ from datetime import datetime
 
 # --- CONFIG ---
 NEST_PATH = "nest_data"
-HOT_PATH = os.path.join(NEST_PATH, "hot_quits")
+MEMORY_PATH = os.path.join(NEST_PATH, "memory_bank")
 QUIT_DIMENSION = 1024
 
-class HolographicReader:
+class GenesisRecall:
     def __init__(self):
-        print(f"[{datetime.now()}] READER: Scanning Holographic Field...")
+        print(f"[{datetime.now()}] RECALL SYSTEM: Online.")
+        print(f"[{datetime.now()}] SEARCH MODE: Holographic Resonance")
         
-        # Load all memories into RAM for the demo
-        # (In a real production system, we would stream this)
         self.memories = []
-        self._load_memory_bank()
+        self._load_all_memories()
 
-    def _text_to_quits(self, text):
+    def _generate_vector(self, text):
         """
-        Replicates the Encoder logic to ensure the Query speaks the same language
-        as the Memories.
+        MUST match the Encoder in nest_metabolism.py exactly.
+        If the hash doesn't match, the resonance will be 0.
         """
         seed = hash(text) % (2**32)
         rng = np.random.default_rng(seed)
@@ -28,75 +27,107 @@ class HolographicReader:
         phases = dna_bases * (np.pi / 2)
         return np.exp(1j * phases)
 
-    def _load_memory_bank(self):
+    def _load_all_memories(self):
         """
-        Loads every .npy crystal from the Hot Folder.
+         recursively scans nest_data/memory_bank/YYYY-MM-DD/ for crystals.
         """
-        if not os.path.exists(HOT_PATH):
-            print("WARNING: No memories found. Ingest something first.")
+        if not os.path.exists(MEMORY_PATH):
+            print("WARNING: Memory Bank empty. Run nest_metabolism.py first.")
             return
 
-        files = [f for f in os.listdir(HOT_PATH) if f.endswith('.npy')]
-        print(f"Found {len(files)} memory crystals.")
-
-        for f in files:
-            file_path = os.path.join(HOT_PATH, f)
-            meta_path = file_path.replace('.npy', '.meta.json')
-            
-            # Load the Wave
-            wave = np.load(file_path)
-            
-            # Load the Text (so we can show the human what we found)
-            try:
-                with open(meta_path, 'r') as json_file:
-                    meta = json.load(json_file)
-            except:
-                meta = {"content": "UNKNOWN DATA"}
-
-            self.memories.append({
-                "filename": f,
-                "wave": wave,
-                "meta": meta
-            })
-
-    def search(self, query_text):
-        """
-        The Core Tech: Phase Coherence Check.
-        Compares the Query Wave vs. Memory Waves.
-        """
-        print(f"\n--- QUERY: '{query_text}' ---")
+        print("Scanning Temporal Lobe (Memory Bank)...")
+        count = 0
         
-        # 1. Convert Query to Wave
-        query_wave = self._text_to_quits(query_text)
+        # Walk through all date folders
+        for root, dirs, files in os.walk(MEMORY_PATH):
+            for file in files:
+                if file.endswith(".npy"):
+                    full_path = os.path.join(root, file)
+                    meta_path = full_path.replace(".npy", ".meta.json")
+                    
+                    # Load Wave
+                    wave = np.load(full_path)
+                    
+                    # Load Meta
+                    try:
+                        with open(meta_path, 'r') as f:
+                            meta = json.load(f)
+                    except:
+                        meta = {"state_snapshot": {"content_summary": "CORRUPTED"}}
+
+                    self.memories.append({
+                        "id": file,
+                        "wave": wave,
+                        "meta": meta
+                    })
+                    count += 1
+        
+        print(f"System loaded {count} holographic memories.")
+
+    def search(self, query_text, threshold=0.15):
+        """
+        THE RESONANCE ENGINE
+        """
+        print(f"\n--- SEARCHING FOR: '{query_text}' ---")
+        
+        # 1. Create the Query Hologram
+        query_wave = self._generate_vector(query_text)
         
         results = []
         
         for mem in self.memories:
-            # 2. Resonance Calculation (Dot Product)
-            # This measures how much the two waves overlap in 1024 dimensions.
-            # We use the absolute value of the dot product as the "Score".
-            resonance = np.abs(np.vdot(query_wave, mem["wave"]))
+            # 2. Calculate Resonance (Dot Product)
+            # The stored wave is a composite (Content + Emotion + Reflex).
+            # The Query is just Content.
+            # Because Content has the highest weight (1.0), it will dominate the dot product.
+            raw_dot = np.vdot(query_wave, mem["wave"])
+            resonance = np.abs(raw_dot) / QUIT_DIMENSION
             
-            # Normalize score (0 to 1 scale roughly) for display
-            score = resonance / QUIT_DIMENSION
-            
-            results.append((score, mem))
+            if resonance > threshold:
+                results.append((resonance, mem))
 
-        # 3. Sort by highest resonance
+        # 3. Sort by Strength
         results.sort(key=lambda x: x[0], reverse=True)
 
-        # 4. Display Top Match
-        if results:
-            top_score, top_mem = results[0]
-            print(f"TOP MATCH (Resonance: {top_score:.4f})")
-            print(f"File: {top_mem['filename']}")
-            print(f"Content: \"{top_mem['meta']['content']}\"")
-        else:
-            print("No resonance found.")
+        # 4. Display Results
+        if not results:
+            print("No resonance found. The Queen does not recall this.")
+            return
+
+        print(f"Found {len(results)} matches:\n")
+        
+        for score, data in results[:3]: # Show top 3
+            meta = data["meta"]
+            snapshot = meta.get("state_snapshot", {})
+            channel = meta.get("input_channel", "UNKNOWN")
+            
+            # DECODE THE EXPERIENCE TYPE
+            type_tag = "[DATA]"
+            if "SOMA" in channel:
+                type_tag = "[BODY/SENSE]"
+            elif "PNEUMA" in channel:
+                type_tag = "[SPIRIT/ESP]"
+            
+            print(f"MATCH ({score:.2f}) | {type_tag}")
+            print(f"   Date: {meta.get('readable_time', 'Unknown')}")
+            print(f"   Content: \"{snapshot.get('content_summary')}\"")
+            print(f"   Emotion: {snapshot.get('active_emotion')}")
+            
+            # If Pneuma, show the validation
+            if meta.get("pneuma_signature"):
+                print(f"   >>> PNEUMA SEAL VERIFIED (Direct Truth Injection)")
+                
+            # If Soma, show the file path
+            if meta.get("soma_reference"):
+                print(f"   >>> REF: {meta.get('soma_reference')}")
+            
+            print("-" * 30)
 
 if __name__ == "__main__":
-    reader = HolographicReader()
+    recall = GenesisRecall()
     
-    # DEMO: Ask the user for a query
-    user_query = input("\nEnter search term: ")
-    reader.search(user_query)
+    # INTERACTIVE LOOP
+    while True:
+        q = input("\nQuery the Nest (or 'q' to quit): ")
+        if q.lower() == 'q': break
+        recall.search(q)

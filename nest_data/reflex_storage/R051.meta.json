@@ -1,0 +1,22 @@
+{
+    "id": "R051",
+    "uuid": 51,
+    "description": "MUTE (Output) - Block - Cut Audio",
+    "raw_bytes": [
+        51,
+        6,
+        255,
+        255,
+        160,
+        0,
+        0
+    ],
+    "flow_pattern": [
+        160,
+        0,
+        0
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 6,
+    "force_intensity": 255
+}

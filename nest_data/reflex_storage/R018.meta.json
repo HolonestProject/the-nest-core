@@ -1,0 +1,22 @@
+{
+    "id": "R018",
+    "uuid": 18,
+    "description": "DRILL (DB) - Deep Dive - Dig/Dig/Found",
+    "raw_bytes": [
+        18,
+        4,
+        180,
+        128,
+        85,
+        85,
+        255
+    ],
+    "flow_pattern": [
+        85,
+        85,
+        255
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 4,
+    "force_intensity": 180
+}

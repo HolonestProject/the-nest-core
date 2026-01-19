@@ -1,0 +1,22 @@
+{
+    "id": "R039",
+    "uuid": 39,
+    "description": "GROW (Storage) - Expand - Rise/Occupy",
+    "raw_bytes": [
+        39,
+        4,
+        100,
+        15,
+        85,
+        255,
+        255
+    ],
+    "flow_pattern": [
+        85,
+        255,
+        255
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 4,
+    "force_intensity": 100
+}

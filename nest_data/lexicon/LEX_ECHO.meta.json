@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "echo",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R050"
+    },
+    "wiring": {
+        "reflex_root": "R050",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

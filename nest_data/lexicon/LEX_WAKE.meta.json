@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "wake",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R033"
+    },
+    "wiring": {
+        "reflex_root": "R033",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

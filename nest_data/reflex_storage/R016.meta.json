@@ -1,0 +1,22 @@
+{
+    "id": "R016",
+    "uuid": 16,
+    "description": "FOCUS (CPU) - Narrow - Steady Rise/Lock",
+    "raw_bytes": [
+        16,
+        1,
+        200,
+        240,
+        85,
+        255,
+        255
+    ],
+    "flow_pattern": [
+        85,
+        255,
+        255
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 1,
+    "force_intensity": 200
+}

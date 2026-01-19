@@ -1,0 +1,23 @@
+{
+    "id": "T009",
+    "uuid": 9,
+    "description": "THIS - Immediate.",
+    "raw_bytes": [
+        9,
+        3,
+        9,
+        1,
+        85,
+        255,
+        255
+    ],
+    "flow_pattern": [
+        85,
+        255,
+        255
+    ],
+    "category": "THOUGHT_PRIMITIVE",
+    "physics": "SUPERPOSITION",
+    "class": 3,
+    "op_code": 9
+}

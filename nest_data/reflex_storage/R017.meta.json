@@ -1,0 +1,22 @@
+{
+    "id": "R017",
+    "uuid": 17,
+    "description": "SCAN (Input) - Widen - Wave/Sweep/Wave",
+    "raw_bytes": [
+        17,
+        0,
+        128,
+        15,
+        85,
+        165,
+        85
+    ],
+    "flow_pattern": [
+        85,
+        165,
+        85
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 0,
+    "force_intensity": 128
+}

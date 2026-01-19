@@ -1,0 +1,22 @@
+{
+    "id": "E014",
+    "uuid": 14,
+    "description": "CALM (Self) - Val:192 Arou:64 - Flow: Steady/Flat/Steady (Homeostasis)",
+    "raw_bytes": [
+        14,
+        4,
+        192,
+        64,
+        0,
+        0,
+        0
+    ],
+    "flow_pattern": [
+        0,
+        0,
+        0
+    ],
+    "category": "CHEMICAL_STATE",
+    "focus": 4,
+    "valence": 192
+}

@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "drill",
+        "type": "PRIMAL_REFLEX",
+        "linked_id": "R018"
+    },
+    "wiring": {
+        "reflex_root": "R018",
+        "emotion_root": null,
+        "thought_root": null
+    }
+}

@@ -1,21 +1,22 @@
 {
     "id": "R005",
-    "description": "CONFUSION (CPU Core) - Spin/Chaotic",
+    "uuid": 5,
+    "description": "SHIELD (Firewall) - Block All - Shield Up/Hold",
     "raw_bytes": [
         5,
-        1,
-        64,
-        170,
+        14,
+        180,
+        255,
         87,
-        213,
-        168
+        255,
+        255
     ],
-    "hardware_target": 1,
-    "initial_strength": 64,
-    "direction": 170,
-    "quit_flow": [
+    "flow_pattern": [
         87,
-        213,
-        168
-    ]
+        255,
+        255
+    ],
+    "category": "HARDWARE_REACTION",
+    "target_hardware": 14,
+    "force_intensity": 180
 }

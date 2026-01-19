@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "frustration",
+        "type": "PRIMAL_EMOTION",
+        "linked_id": "E007"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": "E007",
+        "thought_root": null
+    }
+}

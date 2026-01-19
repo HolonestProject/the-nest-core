@@ -1,0 +1,14 @@
+{
+    "id": "MEM_1768807834",
+    "timestamp": 1768807834,
+    "readable_time": "14:30:34",
+    "input_channel": "SOMA:SIGHT",
+    "state_snapshot": {
+        "content_summary": "The sky is blue because of Rayleigh scattering.",
+        "active_emotion": "CURIOSITY",
+        "active_reflex": "SCAN",
+        "user_intent": "TEST_AXIOM"
+    },
+    "pneuma_signature": null,
+    "soma_reference": null
+}

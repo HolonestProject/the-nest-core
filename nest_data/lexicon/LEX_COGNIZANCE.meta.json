@@ -1,0 +1,12 @@
+{
+    "identity": {
+        "word": "cognizance",
+        "type": "PRIMAL_PNEUMA",
+        "linked_id": "P041"
+    },
+    "wiring": {
+        "reflex_root": null,
+        "emotion_root": null,
+        "thought_root": "P041"
+    }
+}
