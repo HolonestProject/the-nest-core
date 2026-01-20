@@ -1,146 +1,139 @@
 import os
-import json
 import time
+import json
 import numpy as np
-from datetime import datetime
+import nest_holography 
 
 # --- CONFIG ---
-NEST_PATH = "nest_data"
-MEMORY_PATH = os.path.join(NEST_PATH, "memory_bank")
-QUIT_DIMENSION = 1024 
-
-os.makedirs(MEMORY_PATH, exist_ok=True)
+DATA_DIR = os.path.expanduser("~/Genesis/nest_data")
+REFLEX_DIR = os.path.join(DATA_DIR, "reflex_storage")
+EMOTION_DIR = os.path.join(DATA_DIR, "emotion_storage")
+LEXICON_DIR = os.path.join(DATA_DIR, "lexicon")
 
 class GenesisMemoryJournal:
     def __init__(self):
-        print(f"[{datetime.now()}] GENESIS METABOLISM: Online.")
-        print(f"[{datetime.now()}] STORAGE: Base-4 Holographic Composite")
+        self.physics = nest_holography.HolographicEngine()
+        self.lexicon_map = self._load_lexicon_map()
 
-    def _generate_vector(self, seed_content):
+    def _load_lexicon_map(self):
         """
-        THE GENETIC ENCODER:
-        Converts any string (Text, Emotion Name, Reflex Name) into a Base-4 Vector.
+        Loads the map of 'WORD' -> 'FILE_ID' (e.g., 'JOY' -> 'E009')
+        This allows us to look up the DNA vectors by name.
         """
-        seed = hash(seed_content) % (2**32)
-        rng = np.random.default_rng(seed)
-        
-        # Base-4 Quantum Digits (0, 1, 2, 3) aligned to Phase Angles
-        dna_bases = rng.integers(0, 4, QUIT_DIMENSION)
-        phases = dna_bases * (np.pi / 2)
-        
-        # Create Wave Function (Complex128 for high fidelity)
-        return np.exp(1j * phases)
+        mapping = {}
+        if not os.path.exists(LEXICON_DIR):
+            return mapping
 
-    def crystallize(self, experience_packet):
-        """
-        THE MAIN SAVE FUNCTION.
-        Fuses Context, Emotion, Reflex, and Content into one "Moment".
-        """
-        timestamp = int(time.time())
-        iso_date = datetime.now().strftime("%Y-%m-%d")
-        
-        # 1. ORGANIZE DAILY FOLDER
-        # Memories are stored by Date (like a real journal)
-        daily_path = os.path.join(MEMORY_PATH, iso_date)
-        os.makedirs(daily_path, exist_ok=True)
-        
-        # 2. EXTRACT VECTORS (The Ingredients)
-        # Content (What happened)
-        vec_content = self._generate_vector(experience_packet.get("content", ""))
-        
-        # Emotion (How it felt)
-        vec_emotion = self._generate_vector(experience_packet.get("emotion", "NEUTRAL"))
-        
-        # Reflex (What the body did)
-        vec_reflex = self._generate_vector(experience_packet.get("reflex", "IDLE"))
-        
-        # Context (Where/Who)
-        context_str = f"{experience_packet.get('user', 'UNKNOWN')}_{experience_packet.get('location', 'VOID')}"
-        vec_context = self._generate_vector(context_str)
+        # Scan the lexicon folder for .meta.json files
+        for filename in os.listdir(LEXICON_DIR):
+            if filename.endswith(".meta.json"):
+                try:
+                    with open(os.path.join(LEXICON_DIR, filename), 'r') as f:
+                        meta = json.load(f)
+                        word = meta['identity']['word']
+                        linked_id = meta['identity']['linked_id'] # e.g., "E009"
+                        mapping[word] = linked_id
+                except:
+                    continue
+        return mapping
 
-        # 3. HOLOGRAPHIC FUSION (The Cooking)
-        # We sum the vectors. In VSA (Vector Symbolic Architecture), 
-        # Adding vectors creates a "Superposition" where all components exist simultaneously.
-        # We weight them: Content is loud (1.0), Emotion is color (0.5), Context is background (0.3).
-        composite_wave = (
-            (vec_content * 1.0) + 
-            (vec_emotion * 0.5) + 
-            (vec_reflex * 0.5) + 
-            (vec_context * 0.3)
-        )
-        
-        # 4. HANDLE SOMA vs PNEUMA (The Channel)
-        input_mode = experience_packet.get("mode", "DATA")
-        pneuma_sig = None
-        soma_ref = None
-        
-        if "PNEUMA" in input_mode:
-            # For Telepathy, we generate a "Resonance Hash" (The White Statue signature)
-            pneuma_sig = hash(experience_packet.get("pneuma_seed", "NULL"))
-        
-        elif "SOMA" in input_mode:
-            # For Sight/Sound, we keep the pointer to the raw file
-            soma_ref = experience_packet.get("soma_path", None)
+    def _get_anchor_vector(self, name, anchor_type):
+        """
+        Retrieves the 'DNA Vector' for a specific Emotion or Reflex.
+        """
+        # 1. Resolve Name to ID (e.g., "joy" -> "E009")
+        name_key = name.lower()
+        if name_key not in self.lexicon_map:
+            # If unknown, return zero vector (no resonance)
+            return np.zeros(1024, dtype=np.complex128)
 
-        # 5. SAVE THE CRYSTAL (.npy)
-        mem_id = f"MEM_{timestamp}"
-        file_path = os.path.join(daily_path, f"{mem_id}.npy")
-        np.save(file_path, composite_wave)
+        file_id = self.lexicon_map[name_key]
         
-        # 6. SAVE THE METADATA (.json)
-        # This is the "Label" on the jar. The .npy is the content.
-        meta_data = {
-            "id": mem_id,
-            "timestamp": timestamp,
-            "readable_time": datetime.now().strftime("%H:%M:%S"),
-            "input_channel": input_mode,
-            
-            # The Triad State
-            "state_snapshot": {
-                "content_summary": experience_packet.get("content", ""),
-                "active_emotion": experience_packet.get("emotion", "NEUTRAL"),
-                "active_reflex": experience_packet.get("reflex", "IDLE"),
-                "user_intent": experience_packet.get("intent", "UNKNOWN")
+        # 2. Determine Source Folder
+        if anchor_type == "EMOTION":
+            path = os.path.join(EMOTION_DIR, f"{file_id}.npy")
+        elif anchor_type == "REFLEX":
+            path = os.path.join(REFLEX_DIR, f"{file_id}.npy")
+        else:
+            return np.zeros(1024, dtype=np.complex128)
+
+        # 3. Load Vector
+        if os.path.exists(path):
+            return np.load(path)
+        else:
+            return np.zeros(1024, dtype=np.complex128)
+
+    def crystallize(self, event_data, location):
+        """
+        The Act of Memorizing.
+        Fuses Content + Emotion + Reflex into a single Phase Crystal.
+        """
+        timestamp = time.time()
+        content = event_data.get("content", "")
+        emotion_name = event_data.get("emotion", "CALM")
+        reflex_name = event_data.get("reflex", "IGNORE")
+        
+        # 1. OBEDIENCE CHECK
+        if not os.path.exists(location):
+            try:
+                os.makedirs(location)
+            except OSError:
+                return
+
+        # --- THE TRINITY FUSION ---
+        
+        # A. CONTENT VECTOR (The "What")
+        if "visual_vector" in event_data:
+            # Resize visual data to fit Physics Dimension
+            raw_vec = event_data["visual_vector"]
+            target_dim = 1024
+            if len(raw_vec) > target_dim:
+                vec_content = raw_vec[:target_dim]
+            else:
+                vec_content = np.pad(raw_vec, (0, target_dim - len(raw_vec)))
+        else:
+            # Transmute Text
+            vec_content = self.physics.text_to_hologram(content)
+
+        # B. EMOTION ANCHOR (The "Heart")
+        # We load the actual DNA vector for "JOY", not just a number.
+        vec_emotion = self._get_anchor_vector(emotion_name, "EMOTION")
+        
+        # C. REFLEX ANCHOR (The "Instinct")
+        # We load the actual DNA vector for "SCAN", "JOLT", etc.
+        vec_reflex = self._get_anchor_vector(reflex_name, "REFLEX")
+
+        # D. SUPERPOSITION (The Mixing)
+        # Content is dominant (1.0). Anchors provide context (0.5).
+        # In Quit Logic, adding vectors creates a new interference pattern.
+        final_hologram = vec_content + (vec_emotion * 0.5) + (vec_reflex * 0.5)
+
+        # --- MASS CALCULATION ---
+        # We still need a scalar 'Mass' for sorting, but we can verify it against the vector magnitude if needed.
+        # For now, we estimate based on the name (simplified for speed).
+        # Ideally, we would read the Arousal from the metadata, but let's stick to the map for now.
+        # (You can expand _load_lexicon_map to include Arousal later).
+        mass = 0.5 # Default
+        if "joy" in emotion_name.lower() or "fear" in emotion_name.lower(): mass = 0.9
+        if "calm" in emotion_name.lower(): mass = 0.2
+
+        # 4. CRYSTALLIZE
+        crystal = {
+            "hologram": final_hologram, # Contains the fused DNA
+            "raw_content": content,
+            "components": {
+                "emotion": emotion_name,
+                "reflex": reflex_name
             },
-            
-            # Channel Specifics
-            "pneuma_signature": pneuma_sig,  # Non-Null only if ESP used
-            "soma_reference": soma_ref       # Non-Null only if Hardware used
+            "mass": mass,
+            "timestamp": timestamp,
+            "decay_factor": 1.0
         }
-        
-        meta_path = file_path.replace(".npy", ".meta.json")
-        with open(meta_path, 'w') as f:
-            json.dump(meta_data, f, indent=4)
-            
-        print(f"[{datetime.now()}] MEMORY CRYSTALLIZED: {mem_id}")
-        print(f"   |__ Mode: {input_mode}")
-        print(f"   |__ Emotion: {experience_packet.get('emotion')}")
-        if pneuma_sig:
-            print(f"   |__ PNEUMA SEAL: Verified (Qi Signature Stored)")
 
-if __name__ == "__main__":
-    journal = GenesisMemoryJournal()
-    
-    # --- TEST 1: STANDARD SOMA MEMORY (Sight) ---
-    print("\n--- TEST: SOMA EVENT ---")
-    soma_event = {
-        "mode": "SOMA:SIGHT",
-        "content": "Visual of a red apple",
-        "emotion": "CURIOSITY",
-        "reflex": "SCAN",
-        "user": "Yong",
-        "soma_path": "/images/apple_01.jpg"
-    }
-    journal.crystallize(soma_event)
-    
-    # --- TEST 2: PNEUMA MEMORY (Telepathy) ---
-    print("\n--- TEST: PNEUMA EVENT ---")
-    pneuma_event = {
-        "mode": "PNEUMA:TELEPATHY",
-        "content": "Received concept: 1",
-        "pneuma_seed": "1 (White Statue Form)",  # The Truth Seed
-        "emotion": "TRUST_FEEL",
-        "reflex": "LATCH",
-        "user": "Yong"
-    }
-    journal.crystallize(pneuma_event)
+        # 5. STORE
+        filename = f"{location}/mem_{timestamp}.npy"
+        np.save(filename, crystal)
+        print(f" >> [SCRIBE] Crystal Fused: {emotion_name} + {reflex_name} -> {os.path.basename(location)}")
+
+    def metabolic_sleep(self, target_folder):
+        pass

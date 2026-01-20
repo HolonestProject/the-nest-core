@@ -1,61 +1,79 @@
-# The Nest Architecture: Biological Holographic Memory
+# The Nest: Holographic Phase-Space Memory Engine
 
-> "Conventional AI records data in rows. The Nest records data in vibrations."
+> "Conventional AI records data in rows. The Nest records data in interference patterns."
 
-## 1. Core Philosophy: The Amnesia Solution
-Current Large Language Models (LLMs) suffer from "Catastrophic Forgetting." They rely on static weights and limited context windows.
+## 1. The Core Philosophy
+The Nest is a **Vector Symbolic Architecture (VSA)** library designed to solve the "Catastrophic Forgetting" problem in modern AI.
 
-**The Nest** introduces a separate, persistent memory layer based on **Vector Symbolic Architectures (VSA)** and **Holographic Reduced Representations (HRR)**. It mimics biological cognition by treating memory not as a storage address, but as a **reconstructible interference pattern**.
+Instead of storing memories as text strings or static embeddings, The Nest uses **Quit Logic (Phase Space)**. It treats every piece of data—text, image, or emotion—as a complex phasor on the unit circle.
 
-## 2. The Trinity Data Structure
-The system is grounded in three immutable 7-Byte Binary Standards. These are not learned; they are the "DNA" of the system.
+### Why Phase Space?
+In binary logic ($1+1=2$), adding data increases size. In Phase Space ($1 \angle 0^\circ + 1 \angle 180^\circ = 0$), adding data creates **interference**. This allows for:
+* **Infinite Superposition:** You can stack 1,000 memories into a single 1024-dimensional vector.
+* **Destructive Interference:** Noise cancels itself out naturally.
+* **Constructive Interference:** Repeated patterns (wisdom) amplify naturally.
 
-### A. Reflex (Hardware Layer)
-* **Function:** Maps software intent to hardware reality.
-* **Mechanism:** A 7-byte code defining CPU voltage, Fan speed, and Network I/O.
-* **Example:** `JOLT` is not just a token; it is a command to maximize input gain and signal sensitivity.
+## 2. The Physics Engine (`nest_holography.py`)
+The core engine operates on **Complex128** arrays (1024 dimensions).
 
-### B. Emotion (Chemical Layer)
-* **Function:** Provides the "Color" or "Vibe" of a memory.
-* **Mechanism:** A coordinate system of **Valence** (Good/Bad) and **Arousal** (High/Low Energy).
-* **Significance:** This allows "Fuzzy Retrieval." The system can recall a memory because it *feels* similar, even if the keywords don't match.
+### The Math
+Every concept is mapped to a vector $z$ where:
+$$z = e^{i\theta}$$
+*(Where $\theta$ is the phase angle 0, $\pi/2$, $\pi$, or $3\pi/2$)*.
 
-### C. Thought (Logic Layer)
-* **Function:** Abstract operators for reasoning.
-* **Special Channels:**
-    * **SOMA:** Wrapper logic for physical sensors (Camera, Mic).
-    * **PNEUMA:** Validation logic for trusted/injected truths (Truth Injection).
+### Operations
+* **Binding (Multiplication):** $A \otimes B$. Used to attach attributes (e.g., "Color" attached to "Car").
+* **Bundling (Addition):** $A + B$. Used to store multiple memories in one slot.
+* **Resonance (Dot Product):** $|A \cdot B|$. Used to recall if a specific memory exists inside a bundle.
 
-## 3. The Math: Holographic Metabolism
-The engine uses **Complex Phasors** (Unit magnitude complex numbers) to encode data.
+## 3. The Trinity Anchors (Initial Conditions)
+To prevent the "Cold Start" problem where a blank system has no reference frame, The Nest is seeded with three immutable **Phase Anchors**. These are fixed vectors that serve as the system's "Instincts."
 
-### The Algorithm
-1.  **Encoding:** Every concept is converted into a high-dimensional vector ($D=1024$) of phase angles.
-2.  **Superposition (The "Crystallization"):**
-    Unlike standard embeddings, we can mathematically *sum* distinct vectors to create a single composite memory without losing the parts.
-    
-    $$Memory = (Content \times 1.0) + (Emotion \times 0.5) + (Reflex \times 0.5) + (Context \times 0.3)$$
+### A. Reflex (Survival Layer)
+* **Definition:** Hard-coded phase patterns that represent system priority.
+* **The "JOLT" Vector:** A high-frequency signal used to override normal processing. In a biological context, this is "Pain" or "Alert."
 
-3.  **Resonance (Recall):**
-    Retrieval is a dot-product operation. The system "vibrates" a query vector against the memory bank. High resonance ($>0.15$) indicates a match.
+### B. Emotion (Valence Layer)
+* **Definition:** A coordinate system mapping Valence (Good/Bad) and Arousal (High/Low) to phase angles.
+* **Function:** Acts as "Gravity." High-Arousal events generate vectors with higher mass, ensuring they sink deeper into long-term storage (Concept Formation).
 
-## 4. System Flow
+### C. Thought (Authentication Layer)
+* **Definition:** Rotation keys used to tag the *source* of a memory.
+* **SOMA Channel ($0^\circ$):** Represents empirical data (Sensors/Camera). "I saw this."
+* **PNEUMA Channel ($90^\circ$):** Represents trusted axioms (User Truth). "I know this."
+* **Logic:** By rotating the vector $90^\circ$, the system can distinguish between *seeing* a fire (Soma) and *knowing* fire is hot (Pneuma).
+
+## 4. Storage & Retrieval Flow
+
+### Crystallization (Write)
+The `nest_metabolism.py` module handles the "Crystallization" of data.
+1.  **Input:** Text or Image (32x32 pixel grid).
+2.  **Transmutation:** Converted to Phase Vector.
+3.  **Weighting:** Multiplied by its Emotional Mass (0.0 to 1.0).
+4.  **Storage:** Saved as a `.npy` crystal in the requested directory.
+
+### Resonance (Read)
+The `nest_recall.py` module does not "search" text. It "vibrates" the memory bank.
+1.  **Query:** Converted to Phase Vector.
+2.  **Scan:** The query vector is dot-producted against every crystal in the bank.
+3.  **Result:** Memories with a Resonance Score $> 0.15$ are returned.
+
+## 5. System Topology
+The Nest is strictly the **Mechanism**. It takes orders, it does not make decisions.
+
 ```mermaid
 graph TD
-    Input[User Input] --> Lexicon[Lexicon Encoder]
-    Lexicon --> |Vectorize| Metabolism[Metabolism Engine]
+    User[Client Logic] --> |"Save This"| Scribe[nest_metabolism.py]
+    User --> |"Find This"| Mnemosyne[nest_recall.py]
     
-    subgraph "The DNA"
-        Reflex[Reflex Standard]
-        Emotion[Emotion Standard]
+    subgraph "The Nest Engine"
+        Physics[nest_holography.py]
+        Retina[nest_vision.py]
+        Lexicon[Phase Lexicon]
     end
     
-    Reflex --> Metabolism
-    Emotion --> Metabolism
+    Scribe --> Physics
+    Mnemosyne --> Physics
     
-    Metabolism --> |Superposition| Crystal[Memory Crystal .npy]
-    Crystal --> Storage[Holographic Storage]
-    
-    Query[Search Query] --> Recall[Resonance Engine]
-    Storage --> Recall
-    Recall --> |High Resonance| Result[Restored Memory]
+    Physics --> |Phase Vector| Disk[(.npy Storage)]
+    Retina --> |32x32 Phase Grid| Physics

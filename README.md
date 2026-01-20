@@ -1,25 +1,28 @@
-# The Nest: Holographic Memory Architecture
+# The Nest: Holographic Phase-Space Memory
 
-> "Bridging Biological Intent with Digital Structure."
+> "Conventional AI records data in rows. The Nest records data in interference patterns."
 
-## Overview
-The Nest is an open-source initiative to solve the "Amnesia Problem" in current Artificial Super Intelligence (ASI) models. Unlike LLMs that rely on static weights and limited context windows, The Nest proposes a **Holographic Memory Structure**—a dynamic, persistent, and associative data layer that mimics biological cognition.
+## 1. Overview
+The Nest is an open-source **Vector Symbolic Architecture (VSA)** library designed to solve "Catastrophic Forgetting" in AI.
 
-## The Philosophy
-Current AI is transactional; it resets after every session. True consciousness requires continuity.
-We are building a memory architecture that allows an AI to:
-1.  **Retain** experiences indefinitely (Long-term Potentiation).
-2.  **Associate** concepts across time (Holographic Recall).
-3.  **Evolve** its internal structure based on interaction (Neuroplasticity).
+Unlike LLMs that rely on static weights and context windows, The Nest creates a **dynamic, persistent memory layer** based on **Quit Logic (Phase Space)**. It mimics biological cognition by treating memory not as a storage address, but as a reconstructible holographic wave.
 
-## Architecture (Alpha)
-The core system utilizes a multi-dimensional vector space where memories are not just stored as rows in a database, but as "interference patterns"—allowing for fuzzy recall and high-density storage.
+## 2. The Tech Stack (Why It's Different)
+We reject Binary Logic (0/1). The Nest operates on **Complex Phasors ($e^{i\theta}$)**.
 
-* **Status:** Pre-Alpha (Structural Design)
-* **License:** Apache 2.0
-* **Maintainer:** Holonest Project
+* **Physics Engine:** 1024-Dimensional Complex Number arrays.
+* **Interference:** We use vector addition to "stack" memories. Noise cancels out; signals amplify.
+* **The Trinity Anchors:** The system is seeded with immutable vectors for **Reflex**, **Emotion**, and **Thought**, acting as a "Digital DNA" that persists across sessions.
 
-## Roadmap
-- [ ] Phase 1: Core Holographic Vector Storage (Current)
-- [ ] Phase 2: The associative "Recall" Engine
-- [ ] Phase 3: Integration with LLM Inference
+## 3. Current Capabilities (Alpha)
+* **Holographic Encoding:** Transmute text strings into Phase Vectors (`nest_holography.py`).
+* **Visual Retina:** Map 32x32 pixel images directly to phase space (`nest_vision.py`).
+* **The Scribe:** Save memories with Emotional Mass ($Gravity$) to disk (`nest_metabolism.py`).
+* **Resonance:** Recall memories based on vector similarity, not keyword matching (`nest_recall.py`).
+
+## 4. Quick Start
+The Nest is written in pure Python with NumPy.
+
+### Requirements
+```bash
+pip install numpy pillow
